@@ -1,0 +1,58 @@
+Intro and Abstract :
+
+A very good afternoon to everyone present here, my name is yogeshwaran and this are my batch mates Godwin and Vinoth. Our final year project is based on the domain of Cloud Computing. 
+The title of our project is 'CIAFDS'. 
+The main objective of this project is to track the actual usage of data in the cloud even when the data is outsourced by a CSP to another CSP. 
+In order to achieve this we propose a novel accountabily framework called the CIA framework that keeps track of the actual usage of the data in the cloud and ensures that any access to user’s data will trigger authentication and automated logging. Then these logs are sent to the respective data owners at regular intervals or on an on-demand basis.
+
+Existing system:
+
+Under the existing system, when data is stored in the cloud the Data owner enters into a service level agreement with the Cloud service provider which ensures data safety and security for data that is stored in that particular cloud. But there is no way to track the data if it it shared/replicated or outsourced by the csp to an unknown csp. In such a situation the data that is accessed from the outsourced CSP may go unaccounted. This clearly violates the Service Level Agreement but it is very difficult to identify this violation as the Owner is unaware of the activities that happen at the end of the cloud service provider.
+
+Proposed system:
+
+In order to overcome the drawbacks of the existing system, we created a novel framework called the Cloud Information Accountabilty Framework(CIA) which provides end-to-end accountability for the data usage in the cloud.
+It is a lightweight and powerful framework. We call it lightweight because it is happens in higly distributed fashion and does not use any processor intensive computations. And at the same time it is powerful because it is capable of handling enormous data transcations and deliver accurate logs without any latency.
+One of the key features of this system is that the Data Owner can audit even those copies of data that were made without his knowledge. We provide two auditing mechnisms - "push" and "pull" which allows the data owners to track the actual data usage with ease.
+
+System Architecture:
+
+So, this is the overall system architecture. Tbe main component of this is our CIA framework. 
+First, the registered Data owner must request the CIA framework for a password. After the DO is granted the password he can uploads the content to the CSP using that password. Before the data is uploaded it is encrypted using DES algorithm by the File Encrypter component of the CIA framework. Now this encrypted file which is stored in the CSP is not in control of the Data Owner since it may or may not be outsourced by the csp.
+
+No matter in which cloud the data is stored, the user who wants to download a file, must request for authentication from the CIA where he/she is provided a password. After getting the necesary permission the user gets a key using which the file can be downloaded.
+
+All these are data transcation activities are logged and sent to the Log Harmonizer which periodically sends it the logs to the respective owners using scheduled jobs. Also the logs can be accesed by the owner from his portal anytime he wants.
+
+
+Modules:
+There are basically 4 modules in this system.
+	1. CIA framework itself 
+	2. Audit mechanism : Push & Pull
+	3. Logger : responsible for the creation of logs.
+	4. Log harmonizer : responsible for consolidating the logs and and sending them to the respective owners.
+
+Charactaristics of logs :
+
+Logs are a very important aspect of the auditing process. So it is very important that they are kept secure and their authenticity is verifiable. Some of the characteristics of the logs are:
+
+1. First, the logs must verify and record the actual operations that are performed on the data (such as download,upload,read,write etc) and also the time at which it was performed.
+2. Second, the logs files must be reliable and tamper proof which means that they should be immune to attacks such as SQL injection and modifications by malicious parties.
+3. Third, the logs must be correctly sent back to the respective data owners at regular intervals. This would verify the authenticity of the logs.
+
+Des Algorithm:
+	Flow Explaination: 
+		Left/right
+		Fietsal function
+		Li=Ri-1
+		Ri=Li-1 x F(Ri-1,Ki)
+
+Push/Pull Mode:
+	Explanation:
+	Cron + Shell Scripts:
+
+
+
+
+
+

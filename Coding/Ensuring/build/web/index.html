@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Information Accountability Framework for data sharing in the cloud</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen,projection">
+    </head>
+    
+    <body>
+
+        <div id="container" class="clearfix">
+
+            <h1><em></em></h1>
+
+            <h2></h2>
+
+            <div id="content">
+
+                <table border="1">
+                    <tr>
+                        <td><br><br><br><a href="register_owner.jsp"><img src="images/owner.png" width=80px height=80px/></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+                        <td>&nbsp &nbsp <br><a href="register_user.jsp"><img src="images/user.png" width=100px height=130px/></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+                        <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <br><br> <br><a href="register_csp.jsp"><img src="images/csp.png" width=100px height=100px/></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+                    </tr>
+                    <tr>
+                        <td>Data Owner</td>
+                        <td>&nbsp &nbsp &nbsp &nbspUser</td>
+                        <td>Cloud Service<br> Provider</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <ul id="nav">
+
+               
+                <li><a href="login.jsp"><h3>Login</h3></a></li><br><br>
+                <form name="frm" action="check.jsp" method="post" onSubmit="return valid2()">
+                    
+            
+
+                    
+
+                  
+                    <strong><font color="#FFFFFF" size="2">&nbsp &nbsp Username</font></strong>
+                        <font color="#FFFFFF">:</font>
+                        <input type="text" size="14" name="name" placeholder="<<username>>" ><br><br>
+                        <strong><font color="#FFFFFF" size="2">&nbsp &nbsp Password</font></strong>
+                        <font color="#FFFFFF">:</font>
+                        <input type="password" size="14" name="password" placeholder="<<password>>" ><br><br>
+                        <strong><font color="#FFFFFF" size="2">&nbsp &nbsp UserType</font></strong>
+                        <font color="#FFFFFF">:</font></td>
+                        <select name="utype"><option value="select">--Select--</option><option value="owner">Owner</option><option value="csp">CSP</option><option value="user">User</option></select>
+                        <br><br>
+                        <center><input type="submit" style="color:black;background:#cccccc" value="SUBMIT" name="submit">
+                        
+
+               
+
+                </div>
+
+                
+
+            </div>
+
+            
+        </form>
+                
+            </ul>
+
+        </div>
+
+        
+    </body>
+</html>
